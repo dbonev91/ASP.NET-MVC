@@ -1,15 +1,20 @@
 ﻿namespace Twitter.Data
 {
+    using Microsoft.AspNet.Identity.EntityFramework;
     using System.Data.Entity;
     using Twitter.Data.Migrations;
     using Twitter.Models;
 
-    public class TwitterDBContext : DbContext
+    public class TwitterDBContext : IdentityDbContext<ApplicationUser>
     {
         public TwitterDBContext()
-            : base ("TweeterDB")
+            : base("DefaultConnection", throwIfV1Schema: false)
         {
+        }
 
+        public static TwitterDBContext Create()
+        {
+            return new TwitterDBContext();
         }
 
         public DbSet<User> Users { get; set; }

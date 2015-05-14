@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.40418.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{F2E7F07D-0663-4298-B2E2-5ECBE3CA7FB2}"
 EndProject
@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repositories", "Repositorie
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitOfWork", "UnitOfWork", "{97780DC3-2C75-40E6-A95C-E2A220F8EE06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterWeb", "TwitterWeb\TwitterWeb.csproj", "{CDCAB91C-C260-4E0D-BF28-642DC7056DB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C8DCDA9B-2CCC-41E7-8AE0-3AEF0BA293C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8DCDA9B-2CCC-41E7-8AE0-3AEF0BA293C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8DCDA9B-2CCC-41E7-8AE0-3AEF0BA293C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCAB91C-C260-4E0D-BF28-642DC7056DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCAB91C-C260-4E0D-BF28-642DC7056DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCAB91C-C260-4E0D-BF28-642DC7056DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCAB91C-C260-4E0D-BF28-642DC7056DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 		{C8DCDA9B-2CCC-41E7-8AE0-3AEF0BA293C2} = {F2E7F07D-0663-4298-B2E2-5ECBE3CA7FB2}
 		{0352C037-4698-4A14-81E9-7C032C52E5B6} = {F2E7F07D-0663-4298-B2E2-5ECBE3CA7FB2}
 		{97780DC3-2C75-40E6-A95C-E2A220F8EE06} = {F2E7F07D-0663-4298-B2E2-5ECBE3CA7FB2}
+		{CDCAB91C-C260-4E0D-BF28-642DC7056DB5} = {713E58C6-D800-4AEA-A7DA-BF7E58BA41E5}
 	EndGlobalSection
 EndGlobal
