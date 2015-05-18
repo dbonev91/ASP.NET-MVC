@@ -5,7 +5,7 @@
     using Twitter.Data.Migrations;
     using Twitter.Models;
 
-    public class TwitterDBContext : IdentityDbContext<ApplicationUser>
+    public class TwitterDBContext : IdentityDbContext<User>
     {
         public TwitterDBContext()
             : base("DefaultConnection", throwIfV1Schema: false)
