@@ -26,9 +26,17 @@ namespace WorkShop.Web.Controllers
             this.userProfile = userProfile;
         }
 
-        protected IWorkShopData Data { get; private set; }
+        protected IWorkShopData Data
+        {
+            get { return this.data; }
+            private set { this.data = value; }
+        }
 
-        protected User UserProfile { get; private set; }
+        protected User UserProfile
+        {
+            get { return this.userProfile; }
+            private set { this.userProfile = value; }
+        }
 
         protected override IAsyncResult BeginExecute(RequestContext requestContext, AsyncCallback callback, object state)
         {

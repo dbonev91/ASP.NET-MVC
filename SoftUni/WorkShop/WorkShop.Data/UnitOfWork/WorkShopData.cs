@@ -10,11 +10,11 @@ namespace WorkShop.Data.UnitOfWork
 {
     public class WorkShopData : IWorkShopData
     {
-        private readonly WorkShopDbContext dbContext;
+        private readonly IWorkShopDbContext dbContext;
 
         private readonly IDictionary<Type, object> repositories;
 
-        public WorkShopData(WorkShopDbContext dbContext)
+        public WorkShopData(IWorkShopDbContext dbContext)
         {
             this.dbContext = dbContext;
             this.repositories = new Dictionary<Type, object>();
