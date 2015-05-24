@@ -1,7 +1,7 @@
 ﻿@model WorkShop.Web.ViewModels.UserViewModel
-           
-@Model.Username
 
-@Model.FullName
+<h1>@Html.DisplayFor(x => x.Username)</h1>
 
-@Model.Email
+@Html.DisplayNameFor(x => x.Email): @Html.DisplayFor(x => x.Email)
+<br/>
+@Html.DisplayNameFor(x => x.FullName): @Html.DisplayFor(x => x.FullName)

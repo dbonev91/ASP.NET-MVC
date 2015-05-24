@@ -17,24 +17,16 @@
         {
             var user = this.Data.Users
                 .All()
-                .FirstOrDefault(x => x.UserName == username);
+                .Where(x => x.UserName == username)
+                .Select(UserViewModel.ViewModel)
+                .FirstOrDefault();
 
             if (user == null)
             {
                 return this.HttpNotFound("User doesn't exists!");
             }
 
-            var userViewModel = new UserViewModel()
-            {
-                FullName = user.FullName,
-                Email = user.Email,
-                AvatarUrl = user.AvatarUrl,
-                Summary = user.Summary,
-                Username = user.UserName,
-                ContactInfo = user.ContactInfo
-            };
-
-            return this.View(userViewModel);
+            return this.View(user);
         }
     }
 }
