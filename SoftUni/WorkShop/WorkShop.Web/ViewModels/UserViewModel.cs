@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System;
+using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Cryptography.X509Certificates;
 using Microsoft.Ajax.Utilities;
@@ -21,7 +22,9 @@ namespace WorkShop.Web.ViewModels
                     Email = x.Email,
                     FullName = x.FullName,
                     Summary = x.Summary,
-                    Id = x.Id
+                    Id = x.Id,
+                    Certifications = x.Certifications.AsQueryable().Select(CertificationViewModel.ViewModel),
+                    Skills = x.Skills.AsQueryable().Select(SkillViewModel.ViewModel)
                 };
             }
         }
@@ -41,5 +44,7 @@ namespace WorkShop.Web.ViewModels
         public ContactInfo ContactInfo { get; set; }
 
         public IEnumerable<CertificationViewModel> Certifications { get; set; }
+
+        public IEnumerable<SkillViewModel> Skills { get; set; }
     }
 }

@@ -5,3 +5,15 @@
 @Html.DisplayNameFor(x => x.Email): @Html.DisplayFor(x => x.Email)
 <br/>
 @Html.DisplayNameFor(x => x.FullName): @Html.DisplayFor(x => x.FullName)
+<br/>
+@Html.DisplayNameFor(x => x.ContactInfo.Facebook): @Html.DisplayFor(x => x.ContactInfo.Facebook)
+<br/>
+@Html.DisplayNameFor(x => x.Certifications):
+
+@Html.DisplayFor(x => x.Certifications)
+
+@Html.DisplayFor(x => x.Skills);
+
+@section scripts {
+    @Scripts.Render("~/bundles/jqueryval");
+}
