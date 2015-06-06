@@ -1,10 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Web.Routing;
-using Microsoft.Owin.Security.Provider;
-
 namespace WorkShop.Web.Controllers
 {
+    using System;
+    using System.Linq;
+    using System.Web.Routing;
+    using Microsoft.Owin.Security.Provider;
     using System.Web.Mvc;
     using Data;
     using WorkShop.Data.UnitOfWork;
